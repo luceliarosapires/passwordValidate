@@ -1,5 +1,6 @@
 package br.com.testLucelia.passwordValidate.config;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -10,6 +11,7 @@ import br.com.testLucelia.passwordValidate.component.impl.PasswordValidateCompon
 public class PasswordValidateConfig {
 
 	@Bean
+	@Qualifier
 	public PasswordValidateComponent getPasswordValidateComponent() {
 		return new PasswordValidateComponentRulesImpl();
 	}

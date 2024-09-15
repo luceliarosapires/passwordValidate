@@ -3,11 +3,13 @@ package br.com.testLucelia.passwordValidate.component.impl;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 import br.com.testLucelia.passwordValidate.component.PasswordValidateComponent;
 
 @Component
+@Primary
 public class PasswordValidateComponentRulesImpl implements PasswordValidateComponent {
 
 	@Override
